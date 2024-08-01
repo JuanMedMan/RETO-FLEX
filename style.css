@@ -1,0 +1,84 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Arial', sans-serif;
+  background-color: black;
+  color: white;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  gap: 20px;
+  position: relative;
+}
+
+.container h1 {
+  font-size: 1.5em;
+  position: absolute;
+  top: 20px;
+  left: 20px;
+}
+
+.logo {
+  width: 100px;
+  margin-bottom: 20px;
+}
+
+.teams {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 50px;
+}
+
+.team {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 30px;
+}
+
+.team > div {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: rgba(255, 255, 255, 0.1);
+  padding: 20px;
+  border-radius: 10px;
+}
+
+.team > div img {
+  width: 150px;
+  height: 150px;
+  object-fit: cover;
+  border-radius: 50%;
+  margin-bottom: 10px;
+}
+
+.team > div h3 {
+  font-size: 1.5em;
+  margin-bottom: 5px;
+}
+
+.team > div p {
+  font-size: 1.2em;
+}
+
+.vs {
+  width: 100px;
+}
+
+.time {
+  position: absolute;
+  bottom: 20px;
+  right: 20px;
+  font-size: 1.5em;
+}
